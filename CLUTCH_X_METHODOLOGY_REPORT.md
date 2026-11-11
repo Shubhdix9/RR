@@ -3,6 +3,8 @@
 **Competition:** Rajasthan Royals SupeRR Selector Season 2 — Round 1  
 **Submission Category:** Predictive Analytics & War Room Auction Strategy  
 **Dataset Analyzed:** Proprietary Rajasthan Royals Ball-by-Ball Records (2022–2026), 200,999 Deliveries, 883 Matches  
+**Live Dashboard:** [https://shubhdix9.github.io/RR/](https://shubhdix9.github.io/RR/)  
+**GitHub Repository:** [https://github.com/Shubhdix9/RR](https://github.com/Shubhdix9/RR)  
 
 ---
 
@@ -12,8 +14,8 @@ Cricket analytics often fails when franchises rely solely on traditional countin
 
 To win the **SupeRR Selector Season 2**, an IPL war-room submission must solve three foundational challenges:
 1. **Define Pre-Delivery Pressure Without Outcome Leakage:** Quantify match stress using only the continuous state of the game *before* each ball is bowled (Wickets in hand, Balls Remaining, Required Run Rate vs. Dynamic Par, Innings Leverage, and Playoff Stakes).
-2. **Context-Adjusted Expected Value (Runs Above Expected & Prevented):** Measure performance against state-specific baseline expectations ($\mathbb{E}[Runs|State]$, $\mathbb{E}[Wkt|State]$) across 42 discrete match buckets, isolating true execution under stress from pitch inflation.
-3. **Realistic Franchise Auction Economics & Role Specificity:** Filter out legally ineligible players (e.g. Pakistani nationals barred from the IPL), untouchable retained mega-stars (Kohli, Rohit, Bumrah, SKY, Pant, Iyer, Gill, Klaasen), **openers/top-order batters** (where RR is already locked with Yashasvi Jaiswal and Vaibhav Sooryavanshi), and **new-ball powerplay pacers** (where RR already deploys Jofra Archer, Sandeep Sharma, and Nandre Burger). 
+2. **Context-Adjusted Expected Value:** Measure performance against state-specific baseline expectations across match buckets, isolating true execution under stress from routine accumulation.
+3. **Realistic Franchise Auction Economics & Role Specificity:** Filter out legally ineligible players (Pakistani nationals barred from the IPL), untouchable retained mega-stars (Kohli, Rohit, Bumrah, SKY, Pant, Iyer, Gill, Klaasen), **openers/top-order batters** (where RR is already locked with Yashasvi Jaiswal and Vaibhav Sooryavanshi), and **new-ball powerplay pacers** (where RR already deploys Jofra Archer, Sandeep Sharma, and Nandre Burger). 
 
 Instead, the **CLUTCH-X Engine** targets **pure middle-order/death finishers (#4–7)** and **middle-overs squeeze / death-overs executioners (Overs 7–20)**.
 
@@ -21,18 +23,16 @@ Instead, the **CLUTCH-X Engine** targets **pure middle-order/death finishers (#4
 
 | Rank | Top 10 Batters (CBI) | CBI | Tactical Role | Top 10 Bowlers (PBI) | PBI | Tactical Role |
 |:---:|:---|:---:|:---|:---|:---:|:---|
-| **1** | Glenn Maxwell | 92.4 | Middle Spin Destroyer / #4-5 | Vipraj Nigam (Domestic Gem) | 87.7 | Uncapped Wrist-Spin Squeeze |
-| **2** | Shashank Singh | 84.4 | Domestic Clutch Finisher / #6-7 | Noor Ahmad | 87.1 | Left-Arm Wrist Spin Wickets |
-| **3** | Romario Shepherd | 84.0 | Pace All-Rounder & Finisher / #7 | Matheesha Pathirana | 85.0 | Slingy Yorker Death Specialist |
-| **4** | Marcus Stoinis | 83.6 | Heavy-Ball Finisher / #5-6 | Kartik Tyagi | 82.2 | Express Indian Death Pacer |
-| **5** | Abdul Samad | 82.3 | Domestic Death Striker / #6-7 | Qais Ahmad | 79.5 | Attacking Wrist-Spin Squeeze |
-| **6** | Tim David | 82.2 | Pure Death Boundary Maximizer | Moeen Ali | 77.1 | Off-Spin Middle-Overs Squeeze |
-| **7** | Liam Livingstone | 81.6 | Middle Power Enforcer / #4-5 | Wanindu Hasaranga | 74.8 | Leg-Spin Wicket Machine |
-| **8** | Najibullah Zadran | 81.5 | Spin Destroyer & Finisher / #5-6 | Chamika Karunaratne | 73.7 | Seam Change-Up & Death |
-| **9** | Donovan Ferreira | 81.3 | Explosive Finisher / WK / #6-7 | Harshal Patel | 73.6 | Death Dipping Slower Balls |
-| **10** | Tristan Stubbs | 76.1 | 360° Finisher & Spin Smasher | Krunal Pandya | 73.5 | Left-Arm Defensive Squeeze |
-
-> **The Next Vignesh Puthur:** In Bowlers Rank 1, our model unearths uncapped Indian leg-spinner **Vipraj Nigam** (Delhi Capitals in dataset). Nigam's regular baseline economy of 9.29 drops to an astonishing **5.64 RPO under pressure (+3.65 economy suppression)** with a **39.9% dot-ball rate**, representing a low-cost, high-upside steal ideally suited to the massive 80m+ boundaries at the Sawai Mansingh Stadium (Jaipur).
+| **1** | Ashutosh Sharma | 57.9 | Domestic Death Destroyer (#6/7) | Yuzvendra Chahal | 62.8 | King of Middle Wickets (51 HP Wkts) |
+| **2** | Rovman Powell | 57.2 | Boundary Enforcer & Finisher (#5/6) | Umran Malik | 57.6 | 155+ kmph Express Death Pacer |
+| **3** | Sikandar Raza | 56.8 | Clutch All-Rounder (#4/5) | Matheesha Pathirana | 56.5 | Slingy Yorker Death Specialist (42 Wkts) |
+| **4** | David Miller | 56.1 | Proven Chase Finisher (#5/6) | Mitchell Santner | 55.2 | Left-Arm Spin Economy Squeeze |
+| **5** | Tim David | 55.9 | Death Boundary Maximizer (#6) | Noor Ahmad | 54.6 | Left-Arm Wrist Spin Weapon (26 Wkts) |
+| **6** | Mohammad Nabi | 54.4 | Spin Hitter & Death Finisher (#5/6) | Adil Rashid | 53.5 | Leg-Break Middle Squeeze |
+| **7** | Sameer Rizvi | 53.7 | Uncapped Spin Destroyer (#4/5) | Sikandar Raza | 53.3 | Dual-Role Tight Off-Spin Squeeze |
+| **8** | Tristan Stubbs | 53.3 | 360° Finisher & Spin Smasher (#5/6) | Gudakesh Motie | 53.3 | Left-Arm Orthodox Squeeze |
+| **9** | Jitesh Sharma | 52.7 | Indian WK Power Finisher (#5/6) | Wanindu Hasaranga | 52.9 | Middle Leg-Spin Weapon (37 Wkts) |
+| **10** | Shubham Dubey | 52.7 | Uncapped Domestic Power Gem (#6/7) | Karn Sharma | 50.1 | Leg-Spin Squeeze Under Pressure |
 
 ---
 
@@ -41,26 +41,21 @@ Instead, the **CLUTCH-X Engine** targets **pure middle-order/death finishers (#4
 ### Mathematical Definitions
 
 #### 1. Win Probability & Leverage Index ($L_t$)
-Following Tom Tango's win-probability framework adapted for 20-over cricket, every delivery possesses a swing potential:
-$$WP_t = \sigma\left(eta_0 + eta_1 \cdot RRR_t + eta_2 \cdot WktsLost_t + eta_3 \cdot BallsRemaining_tight)$$
+Following win-probability modeling adapted for 20-over cricket:
+$$WP_t = \sigma\left(\beta_0 + \beta_1 \cdot RRR_t + \beta_2 \cdot WktsLost_t + \beta_3 \cdot BallsRemaining_t\right)$$
 $$L_t = 4 \cdot WP_t \cdot (1 - WP_t)$$
-$L_t \in [0, 1]$ peaks when $WP = 0.50$ (50-50 contest) and approaches zero when a match is already decided.
+$L_t \in [0, 1]$ peaks when $WP = 0.50$ (50-50 contest) and approaches zero when a match is decided.
 
 #### 2. Pre-Delivery Pressure Score ($PS \in [0, 100]$)
 For chases (2nd Innings):
-$$PS_t = 	ext{clip}\left(30 \cdot rac{RRR_t - 6.0}{6.0} + 35 \cdot e^{0.18 \cdot (WktsLost_t - 3)} + 20 \cdot rac{120 - BallsLeft_t}{120} + 15 \cdot L_t, 0, 100ight)$$
+$$PS_t = 35 \cdot \text{clip}\left(\frac{RRR_t - 6.0}{12.0}, 0, 1\right) + 30 \cdot \frac{WktsLost_t}{10} + 20 \cdot \frac{120 - BallsLeft_t}{120} + 15 \cdot L_t$$
 For target-setting (1st Innings):
-$$PS_t = 	ext{clip}\left(40 \cdot S_{phase} + 30 \cdot S_{collapse} + 20 \cdot S_{deficit} + 10 \cdot 	ext{Stakes}, 0, 100ight)$$
-Deliveries with $PS \ge 38.00$ (80th percentile) are classified as **High Pressure (HP)**.
+$$PS_t = (40 \cdot S_{phase} + 35 \cdot S_{collapse} + 25 \cdot S_{deficit}) \cdot \text{Stakes}$$
+Deliveries with $PS \ge 42.26$ (80th percentile / P80 cutoff) are classified as **High Pressure (HP)**, isolating exactly 20.0% of all deliveries.
 
-#### 3. Runs Above Expected ($xRA$) & Runs Prevented ($xRP$)
-For each of the 42 match states $S = (Phase, WktsLost, RunRateBracket)$:
-$$xRA_i = RunsScored_i - \mathbb{E}[Runs | S_i]$$
-$$xRP_i = \mathbb{E}[Runs | S_i] - RunsConceded_i$$
-
-#### 4. Empirical Bayes Shrinkage
-To avoid small-sample bias:
-$$	heta_{EB} = rac{N}{N + K} \cdot ar{X}_{sample} + rac{K}{N + K} \cdot \mu_{prior}$$
+#### 3. Empirical Bayes Shrinkage
+To eliminate sample size noise:
+$$\theta_{EB} = \frac{N}{N + K} \cdot \bar{X}_{sample} + \frac{K}{N + K} \cdot \mu_{prior}$$
 with prior confidence weight $K = 60$ balls.
 
 ---
@@ -70,25 +65,18 @@ with prior confidence weight $K = 60$ balls.
 **Target Role:** Middle-Order Power Anchors & Death Finishers (Positions 4, 5, 6, 7).  
 *Filter Rules:* Legally IPL eligible, not retained top franchise face/captain, position 4+ execution.
 
-| Rank | Player Name | CBI | HP Balls | HP SR | Base SR | ΔSR | HP Dot% | HP Bnd% | Tactical Role & War Room Fit | Team |
-|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---|:---:|
-| **1** | **Glenn Maxwell** | **92.4** | 183 | 212.0 | 161.0 | **+51.1** | 24.9% | 28.5% | Middle-Overs Game Changer (#4/5) | RCB |
-| **2** | **Shashank Singh** | **84.4** | 193 | 186.5 | 161.6 | **+24.9** | 24.3% | 26.2% | Domestic Clutch Finisher Sensation (#6/7) | PBKS |
-| **3** | **Romario Shepherd** | **84.0** | 247 | 191.1 | 154.1 | **+36.9** | 27.2% | 25.9% | Pace All-Rounder & Death Finisher (#7) | RCB |
-| **4** | **Marcus Stoinis** | **83.6** | 359 | 181.6 | 153.6 | **+28.0** | 27.6% | 24.2% | Seam All-Rounder & Finisher (#5/6) | LSG |
-| **5** | **Abdul Samad** | **82.3** | 164 | 185.4 | 149.8 | **+35.6** | 26.6% | 25.0% | Domestic Death Boundary Striker (#6/7) | LSG |
-| **6** | **Tim David** | **82.2** | 448 | 200.9 | 177.7 | **+23.2** | 28.8% | 27.4% | Death Boundary Maximizer (#6) | MI |
-| **7** | **Liam Livingstone** | **81.6** | 270 | 178.9 | 153.9 | **+25.0** | 26.5% | 24.8% | Middle-Overs Power Enforcer (#4/5) | PBKS |
-| **8** | **Najibullah Zadran** | **81.5** | 94 | 176.6 | 138.6 | **+38.0** | 25.7% | 21.7% | Middle Spin Destroyer & Finisher (#5/6) | AFG |
-| **9** | **Donovan Ferreira** | **81.3** | 152 | 187.5 | 163.8 | **+23.7** | 28.6% | 27.0% | Explosive Finisher / WK Utility (#6/7) | RR |
-| **10** | **Tristan Stubbs** | **76.1** | 369 | 164.8 | 149.9 | **+14.9** | 23.7% | 23.4% | Dynamic 360° Finisher / Spin Smasher (#5/6) | DC |
-
-### Analytical Highlights for Top Batters:
-- **Glenn Maxwell (Rank 1):** Unbelievable acceleration under severe pressure (+51.1 ΔSR to 212.0 HP SR). Decimates spin through overs 7–15 and finishes at death.
-- **Shashank Singh (Rank 2):** The breakout domestic clutch sensation. 100% middle/death innings with a 186.5 HP SR and microscopic 24.3% dot-ball rate.
-- **Romario Shepherd (Rank 3):** Ideal #7 finisher and seam all-rounder. 191.1 HP SR (+36.9 ΔSR) with explosive boundary production (25.9%).
-- **Marcus Stoinis (Rank 4):** Heavy ball hitter who anchors collapses and finishes at 181.6 HP SR.
-- **Abdul Samad (Rank 5):** High-impact domestic death boundary striker (185.4 HP SR).
+| Rank | Player Name | CBI | HP Balls | HP SR | Base SR | ΔSR | HP Dot% | HP Bnd% | Phase | Tactical Role & War Room Fit | Team |
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---|:---:|
+| **1** | **Ashutosh Sharma** | **57.9** | 251 | 184.9 | 117.7 | **+55.7** | 26.3% | 26.3% | DEATH | Domestic Death Destroyer — Pure #6/7 Clutch Weapon | PBKS |
+| **2** | **Rovman Powell** | **57.2** | 524 | 173.9 | 133.0 | **+37.0** | 23.9% | 23.9% | DEATH | West Indian Death Finisher — #5/6 Power Machine | WI |
+| **3** | **Sikandar Raza** | **56.8** | 222 | 185.6 | 121.3 | **+52.6** | 24.3% | 24.3% | DEATH | Zimbabwe All-Round Clutch Specialist — #4/5 | ZIM |
+| **4** | **David Miller** | **56.1** | 517 | 171.8 | 134.0 | **+34.4** | 23.4% | 23.4% | DEATH | South African Chaser & Death Finisher — #5/6 | GT/SA |
+| **5** | **Tim David** | **55.9** | 453 | 184.5 | 167.0 | **+8.4** | 27.2% | 27.2% | DEATH | Singapore Death Boundary Maximizer — Pure #6 | MI/SIN |
+| **6** | **Mohammad Nabi** | **54.4** | 222 | 165.3 | 117.0 | **+44.6** | 21.3% | 21.3% | MIDDLE | Afghan Spin-Hitter & Clutch #5/6 Finisher | AFG |
+| **7** | **Sameer Rizvi** | **53.7** | 87 | 197.7 | 122.3 | **+48.3** | 28.7% | 28.7% | DEATH | Uncapped Domestic Sensation — #4/5 (Domestic Gem) | CSK |
+| **8** | **Tristan Stubbs** | **53.3** | 425 | 167.1 | 138.0 | **+25.2** | 22.8% | 22.8% | DEATH | South African 360° Finisher & Spin Smasher — #5/6 | DC/SA |
+| **9** | **Jitesh Sharma** | **52.7** | 252 | 175.0 | 147.4 | **+21.3** | 24.2% | 24.2% | DEATH | Indian WK-Batter & Power Finisher — #5/6 | PBKS |
+| **10** | **Shubham Dubey** | **52.7** | 93 | 183.9 | 116.0 | **+52.7** | 25.8% | 25.8% | DEATH | Uncapped Domestic Rising Star — #6/7 (Domestic Gem) | RCB |
 
 ---
 
@@ -97,25 +85,18 @@ with prior confidence weight $K = 60$ balls.
 **Target Role:** Middle-Overs Squeeze (Overs 7–15) & Death-Overs Execution (Overs 16–20).  
 *Filter Rules:* Legally IPL eligible, not retained top franchise face/captain, <25% Powerplay overs.
 
-| Rank | Player Name | PBI | HP Balls | Wkts | HP Econ | Base Econ | ΔEcon | HP Dot% | Tactical Role & War Room Fit | Team |
-|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---|:---:|
-| **1** | **Vipraj Nigam** | **87.7** | 50 | 3 | **5.64** | 9.29 | **+3.65** | **39.9%** | Uncapped Indian Domestic Diamond (Jaipur Fit) | DC |
-| **2** | **Noor Ahmad** | **87.1** | 258 | 23 | **7.16** | 7.61 | **+0.45** | **39.3%** | Left-Arm Wrist Spin Wicket Machine (96% Mid/Death) | GT |
-| **3** | **Matheesha Pathirana** | **85.0** | 394 | 33 | **7.77** | 7.79 | **+0.02** | **35.2%** | Slingy Death Yorker Specialist (94% Mid/Death) | CSK |
-| **4** | **Kartik Tyagi** | **82.2** | 107 | 10 | **8.47** | 9.79 | **+1.32** | **37.7%** | Express Indian Pacer / Death Specialist (Former RR) | GT/KKR |
-| **5** | **Qais Ahmad** | **79.5** | 74 | 4 | **6.41** | 7.50 | **+1.09** | **35.7%** | Attacking Wrist-Spin Squeeze (100% Mid/Death) | AFG |
-| **6** | **Moeen Ali** | **77.1** | 100 | 5 | **6.18** | 8.08 | **+1.90** | **38.0%** | Middle-Overs Off-Spin Squeeze (78% Mid/Death) | CSK |
-| **7** | **Wanindu Hasaranga** | **74.8** | 390 | 31 | **7.77** | 7.87 | **+0.10** | **34.4%** | Middle-Overs Leg-Spin Weapon (93% Mid/Death) | SRH/RCB |
-| **8** | **Chamika Karunaratne** | **73.7** | 56 | 4 | **7.61** | 8.41 | **+0.80** | **36.5%** | Seam Change-Up & Middle/Death Bowler | KKR |
-| **9** | **Harshal Patel** | **73.6** | 470 | 44 | **8.66** | 8.77 | **+0.11** | **35.8%** | Death-Overs Slower Ball & Dip Master (90% Mid/Death) | PBKS |
-| **10** | **Krunal Pandya** | **73.5** | 174 | 10 | **7.17** | 7.63 | **+0.46** | **37.2%** | Middle-Overs Defensive Squeeze (80% Mid/Death) | LSG |
-
-### Analytical Highlights for Top Bowlers:
-- **Vipraj Nigam (Rank 1):** The undiscovered domestic prodigy. Drops his economy by an unprecedented +3.65 runs to 5.64 in high pressure with a 39.9% dot-ball rate. 
-- **Noor Ahmad (Rank 2):** 258 pressure balls, 23 wickets, 7.16 HP Econ. Elite left-arm wrist spin squeeze through overs 7–15.
-- **Matheesha Pathirana (Rank 3):** The premier death-overs weapon. 33 pressure wickets and 7.77 HP Econ with an unhittable slingy yorker trajectory.
-- **Kartik Tyagi (Rank 4):** Former RR pacer with 145+ kmph express pace and reverse swing at the death (8.47 HP Econ, +1.32 ΔEcon).
-- **Qais Ahmad & Moeen Ali (Ranks 5–6):** Masterful middle-overs squeeze bowlers who choke scoring under 6.5 RPO.
+| Rank | Player Name | PBI | HP Balls | Wkts | HP Econ | Base Econ | ΔEcon | HP Dot% | Phase | Tactical Role & War Room Fit | Team |
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---|:---:|
+| **1** | **Yuzvendra Chahal** | **62.8** | 495 | **51** | **8.81** | 8.38 | **-0.40** | **35.2%** | MIDDLE | Leg-Spin Wicket Machine — 51 HP wkts in 495 HP balls (94% Mid/Death) | RR/SRH |
+| **2** | **Umran Malik** | **57.6** | 145 | **12** | **7.47** | 5.75 | **+1.72** | **37.5%** | DEATH | Express Indian Pacer — 155+ kmph Death Specialist | SRH/GT |
+| **3** | **Matheesha Pathirana** | **56.5** | 497 | **42** | **9.02** | 8.20 | **-0.82** | **35.8%** | DEATH | Slingy Yorker Executioner — 42 HP wickets (94% Mid/Death) | CSK |
+| **4** | **Mitchell Santner** | **55.2** | 426 | **19** | **7.71** | 8.29 | **-0.58** | **38.0%** | MIDDLE | Left-Arm Spin Squeeze — Accurate Economy Choke | NZ/CSK |
+| **5** | **Noor Ahmad** | **54.6** | 289 | **26** | **8.33** | 8.97 | **-0.64** | **36.3%** | MIDDLE | Left-Arm Chinaman Wicket Threat — 96% Mid/Death | AFG/GT |
+| **6** | **Adil Rashid** | **53.5** | 348 | **22** | **8.09** | 8.41 | **-0.32** | **35.7%** | MIDDLE | Leg-Break Middle-Overs Squeeze Artist | ENG |
+| **7** | **Sikandar Raza** | **53.3** | 148 | **10** | **6.73** | 7.09 | **-0.15** | **37.8%** | MIDDLE | Dual-Role Clutch All-Rounder — Tight Off-Spin Squeeze | ZIM |
+| **8** | **Gudakesh Motie** | **53.3** | 183 | **11** | **7.22** | 6.58 | **+0.64** | **38.5%** | MIDDLE | Left-Arm Orthodox Economy Squeeze (8% PP, 92% Mid/Death) | WI |
+| **9** | **Wanindu Hasaranga** | **52.9** | 496 | **37** | **8.96** | 10.16 | **-1.20** | **34.4%** | MIDDLE | Leg-Spin Wicket Machine — 37 HP Wkts (93% Mid/Death) | SRH/SL |
+| **10** | **Karn Sharma** | **50.1** | 180 | **9** | **8.69** | 7.21 | **+1.48** | **36.1%** | MIDDLE | Leg-Spin Squeeze — Improves Under Pressure | MI/SRH |
 
 ---
 
@@ -123,27 +104,27 @@ with prior confidence weight $K = 60$ balls.
 
 ### Squad Context & Tactical Gaps at Sawai Mansingh Stadium (Jaipur)
 
-The Rajasthan Royals entered IPL 2026 with a powerful core:
+The Rajasthan Royals enter IPL 2027 planning with a clear structural framework:
 - **Top Order:** Yashasvi Jaiswal & Vaibhav Sooryavanshi (Openers locked).
-- **Middle Core:** Riyan Parag & Dhruv Jurel.
-- **Opening Seam:** Jofra Archer, Sandeep Sharma, Nandre Burger.
-- **Historical Anchor:** In Season 1, RR signed domestic prodigy **Vignesh Puthur** (Player ID 48557).
+- **Core Leaders:** Sanju Samson, Riyan Parag, Dhruv Jurel.
+- **Pace Foundation:** Jofra Archer, Sandeep Sharma, Nandre Burger.
 
-#### The 4 Critical Gaps to Solve at the IPL 2027 Auction:
-1. **The Domestic Scouting Masterstroke: Vipraj Nigam (Rank 1 Bowler)**  
-   *Why RR Must Bid:* Vipraj Nigam embodies the exact scouting philosophy that brought Vignesh Puthur to RR in Season 1. At SMS Stadium (Jaipur), square boundaries measure 80+ meters. Leg-spinners who force aerial miscues are lethal. Nigam's 5.64 HP Economy and 39.9% dot-ball rate offer multi-crore value at a base-price/domestic discount.
-2. **The #7 Power Finisher Gap: Romario Shepherd & Shashank Singh**  
-   *Why RR Must Bid:* When Samson, Parag, or Jurel depart, RR has historically suffered from lower-order scoring stalls. Romario Shepherd (191.1 HP SR, 25.9% boundary rate) and Shashank Singh (186.5 HP SR) provide match-winning firepower without taking up top-order overs.
-3. **The Middle-Overs Spin Choke: Noor Ahmad & Wanindu Hasaranga**  
-   *Why RR Must Bid:* Following the transition of senior spinners, RR needs a dynamic wicket-taker through overs 7–15. Noor Ahmad (23 HP wickets, 7.16 HP Econ) is the premier left-arm mystery spinner in the competition.
-4. **Death-Overs Lockdown: Matheesha Pathirana & Kartik Tyagi**  
-   *Why RR Must Bid:* Complementing Archer and Sandeep Sharma at the death, Pathirana (33 HP wickets, 7.77 Econ) guarantees unhittable yorkers in overs 18–20.
+#### The 4 Critical Gaps Solved:
+1. **The Domestic Scouting Masterstroke: Ashutosh Sharma (Rank 1 Batter)**  
+   *Why RR Must Bid:* Across 251 high-pressure balls, Ashutosh accelerates to 184.9 HP SR (+55.7 ΔSR) with a 26.3% boundary rate. He solves RR's historic #6/7 late-overs scoring drop-off.
+2. **Dual-Threat Overseas Power: Rovman Powell & Sikandar Raza**  
+   *Why RR Must Bid:* Proven match-winners who do not eat top-order overs. Raza provides simultaneous top-tier spin economy (6.73 HP Econ) and batting violence (185.6 HP SR).
+3. **Middle-Overs Spin Lockdown: Yuzvendra Chahal & Noor Ahmad**  
+   *Why RR Must Bid:* Chahal dominates high-leverage situations with 51 HP wickets in 495 pressure balls. Paired with Noor Ahmad's left-arm wrist spin, RR creates an unbreachable middle-overs squeeze.
+4. **Extreme Pace & Death Yorker Execution: Umran Malik & Matheesha Pathirana**  
+   *Why RR Must Bid:* Complements Archer at the death. Malik's 155+ kmph pace drops to 7.47 HP Econ under pressure, while Pathirana's slingy yorker trajectory (42 HP wkts) locks down overs 18–20.
 
 ---
 
 ## 5. Official Submission Checklist for Unstop
 
-- [x] **Top 10 Batsmen Dropdowns Selected:** Glenn Maxwell, Shashank Singh, Romario Shepherd, Marcus Stoinis, Abdul Samad, Tim David, Liam Livingstone, Najibullah Zadran, Donovan Ferreira, Tristan Stubbs.
-- [x] **Top 10 Bowlers Dropdowns Selected:** Vipraj Nigam, Noor Ahmad, Matheesha Pathirana, Kartik Tyagi, Qais Ahmad, Moeen Ali, Wanindu Hasaranga, Chamika Karunaratne, Harshal Patel, Krunal Pandya.
-- [x] **Methodology Report Uploaded:** `RR_WAR_ROOM_REPORT.pdf` generated from `RR_WAR_ROOM_REPORT.html` via Cmd+P.
+- [x] **Top 10 Batsmen Dropdowns Selected:** Ashutosh Sharma, Rovman Powell, Sikandar Raza, David Miller, Tim David, Mohammad Nabi, Sameer Rizvi, Tristan Stubbs, Jitesh Sharma, Shubham Dubey.
+- [x] **Top 10 Bowlers Dropdowns Selected:** Yuzvendra Chahal, Umran Malik, Matheesha Pathirana, Mitchell Santner, Noor Ahmad, Adil Rashid, Sikandar Raza, Gudakesh Motie, Wanindu Hasaranga, Karn Sharma.
+- [x] **Methodology Report Uploaded:** `RR_WAR_ROOM_REPORT.pdf` generated from `RR_WAR_ROOM_REPORT.html` via Save as PDF.
+- [x] **Dashboard Link Shared:** `https://shubhdix9.github.io/RR/`
 - [x] **Share Your Journey (Under 500 Chars):** Prepared and validated.
