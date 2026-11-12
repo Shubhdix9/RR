@@ -67,16 +67,16 @@ with prior confidence weight $K = 60$ balls.
 
 | Rank | Player Name | CBI | HP Balls | HP SR | Base SR | ΔSR | HP Dot% | HP Bnd% | Phase | Tactical Role & War Room Fit | Team |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---|:---:|
-| **1** | **Ashutosh Sharma** | **57.9** | 251 | 184.9 | 117.7 | **+55.7** | 26.3% | 26.3% | DEATH | Domestic Death Destroyer — Pure #6/7 Clutch Weapon | PBKS |
-| **2** | **Rovman Powell** | **57.2** | 524 | 173.9 | 133.0 | **+37.0** | 23.9% | 23.9% | DEATH | West Indian Death Finisher — #5/6 Power Machine | WI |
-| **3** | **Sikandar Raza** | **56.8** | 222 | 185.6 | 121.3 | **+52.6** | 24.3% | 24.3% | DEATH | Zimbabwe All-Round Clutch Specialist — #4/5 | ZIM |
-| **4** | **David Miller** | **56.1** | 517 | 171.8 | 134.0 | **+34.4** | 23.4% | 23.4% | DEATH | South African Chaser & Death Finisher — #5/6 | GT/SA |
-| **5** | **Tim David** | **55.9** | 453 | 184.5 | 167.0 | **+8.4** | 27.2% | 27.2% | DEATH | Singapore Death Boundary Maximizer — Pure #6 | MI/SIN |
-| **6** | **Mohammad Nabi** | **54.4** | 222 | 165.3 | 117.0 | **+44.6** | 21.3% | 21.3% | MIDDLE | Afghan Spin-Hitter & Clutch #5/6 Finisher | AFG |
-| **7** | **Sameer Rizvi** | **53.7** | 87 | 197.7 | 122.3 | **+48.3** | 28.7% | 28.7% | DEATH | Uncapped Domestic Sensation — #4/5 (Domestic Gem) | CSK |
-| **8** | **Tristan Stubbs** | **53.3** | 425 | 167.1 | 138.0 | **+25.2** | 22.8% | 22.8% | DEATH | South African 360° Finisher & Spin Smasher — #5/6 | DC/SA |
-| **9** | **Jitesh Sharma** | **52.7** | 252 | 175.0 | 147.4 | **+21.3** | 24.2% | 24.2% | DEATH | Indian WK-Batter & Power Finisher — #5/6 | PBKS |
-| **10** | **Shubham Dubey** | **52.7** | 93 | 183.9 | 116.0 | **+52.7** | 25.8% | 25.8% | DEATH | Uncapped Domestic Rising Star — #6/7 (Domestic Gem) | RCB |
+| **1** | **Ashutosh Sharma** | **85.7** | 233 | 183.7 | 137.6 | **+46.1** | 25.3% | 26.2% | DEATH | Domestic Death Destroyer — Pure #6/7 Clutch Gem (+55.8 xRA/100) | PBKS |
+| **2** | **Sameer Rizvi** | **86.7** | 85 | 184.7 | 146.1 | **+38.6** | 24.7% | 27.1% | DEATH | Uncapped Indian Spin Smasher — High Upside #4/5 (80% Consistency) | CSK |
+| **3** | **Shubham Dubey** | **85.2** | 90 | 180.0 | 133.1 | **+46.9** | 25.6% | 25.6% | DEATH | Uncapped Domestic Power Gem — #6/7 Left-Hand Finisher | RR/RCB |
+| **4** | **Donovan Ferreira** | **85.0** | 111 | 188.3 | 163.9 | **+24.4** | 26.1% | 27.9% | DEATH | Explosive 360° Finisher & Backup WK — 83.3% Match Consistency | RR |
+| **5** | **Sikandar Raza** | **84.2** | 223 | 178.9 | 131.2 | **+47.7** | 24.2% | 24.7% | DEATH | Dual-Threat Clutch All-Rounder — Crisis Recovery #5/6 Anchor | PBKS/ZIM |
+| **6** | **Liam Livingstone** | **82.1** | 237 | 176.4 | 152.8 | **+23.6** | 26.6% | 25.3% | DEATH | Middle-Overs Power Enforcer — 81.2% Match Consistency | PBKS/ENG |
+| **7** | **Mark Chapman** | **82.2** | 137 | 178.8 | 148.8 | **+30.0** | 24.8% | 24.1% | MIDDLE | High-Efficiency Middle Spin Destroyer — #4/5 Left-Hand Anchor | NZ |
+| **8** | **Tim David** | **81.0** | 423 | 187.5 | 175.3 | **+12.2** | 27.9% | 27.2% | DEATH | High-Volume Death Boundary Maximizer — Pure #6 Finisher | MI |
+| **9** | **Rovman Powell** | **79.4** | 513 | 166.9 | 139.2 | **+27.7** | 24.0% | 23.8% | DEATH | Proven Match-Winning Finisher — 513 HP Deliveries Tested | RR/WI |
+| **10** | **Shashank Singh** | **79.1** | 277 | 173.3 | 152.3 | **+21.0** | 24.2% | 25.6% | DEATH | Domestic Clutch Sensation — Reliable Lower-Order Hitter (#6/7) | PBKS |
 
 ---
 
@@ -87,16 +87,16 @@ with prior confidence weight $K = 60$ balls.
 
 | Rank | Player Name | PBI | HP Balls | Wkts | HP Econ | Base Econ | ΔEcon | HP Dot% | Phase | Tactical Role & War Room Fit | Team |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---|:---:|
-| **1** | **Yuzvendra Chahal** | **62.8** | 495 | **51** | **8.81** | 8.38 | **-0.40** | **35.2%** | MIDDLE | Leg-Spin Wicket Machine — 51 HP wkts in 495 HP balls (94% Mid/Death) | RR/SRH |
-| **2** | **Umran Malik** | **57.6** | 145 | **12** | **7.47** | 5.75 | **+1.72** | **37.5%** | DEATH | Express Indian Pacer — 155+ kmph Death Specialist | SRH/GT |
-| **3** | **Matheesha Pathirana** | **56.5** | 497 | **42** | **9.02** | 8.20 | **-0.82** | **35.8%** | DEATH | Slingy Yorker Executioner — 42 HP wickets (94% Mid/Death) | CSK |
-| **4** | **Mitchell Santner** | **55.2** | 426 | **19** | **7.71** | 8.29 | **-0.58** | **38.0%** | MIDDLE | Left-Arm Spin Squeeze — Accurate Economy Choke | NZ/CSK |
-| **5** | **Noor Ahmad** | **54.6** | 289 | **26** | **8.33** | 8.97 | **-0.64** | **36.3%** | MIDDLE | Left-Arm Chinaman Wicket Threat — 96% Mid/Death | AFG/GT |
-| **6** | **Adil Rashid** | **53.5** | 348 | **22** | **8.09** | 8.41 | **-0.32** | **35.7%** | MIDDLE | Leg-Break Middle-Overs Squeeze Artist | ENG |
-| **7** | **Sikandar Raza** | **53.3** | 148 | **10** | **6.73** | 7.09 | **-0.15** | **37.8%** | MIDDLE | Dual-Role Clutch All-Rounder — Tight Off-Spin Squeeze | ZIM |
-| **8** | **Gudakesh Motie** | **53.3** | 183 | **11** | **7.22** | 6.58 | **+0.64** | **38.5%** | MIDDLE | Left-Arm Orthodox Economy Squeeze (8% PP, 92% Mid/Death) | WI |
-| **9** | **Wanindu Hasaranga** | **52.9** | 496 | **37** | **8.96** | 10.16 | **-1.20** | **34.4%** | MIDDLE | Leg-Spin Wicket Machine — 37 HP Wkts (93% Mid/Death) | SRH/SL |
-| **10** | **Karn Sharma** | **50.1** | 180 | **9** | **8.69** | 7.21 | **+1.48** | **36.1%** | MIDDLE | Leg-Spin Squeeze — Improves Under Pressure | MI/SRH |
+| **1** | **Umran Malik** | **61.6** | 132 | **16** | **7.57** | 9.28 | **+1.71** | **38.2%** | DEATH | 155+ kmph Express Death Bowler — +1.71 Economy Suppression Under Pressure | SRH/GT |
+| **2** | **Gudakesh Motie** | **55.4** | 168 | **11** | **7.50** | 7.86 | **+0.36** | **38.5%** | MIDDLE | Left-Arm Orthodox Squeeze — 80.0% Match Consistency (92% Mid/Death) | WI |
+| **3** | **Washington Sundar** | **55.4** | 181 | **11** | **7.62** | 7.90 | **+0.28** | **38.7%** | MIDDLE | Finger Spin Precision Choke — +0.94 Runs Prevented per Over vs State | SRH/IND |
+| **4** | **Mitchell Santner** | **54.3** | 426 | **22** | **7.58** | 7.16 | **-0.42** | **38.0%** | MIDDLE | World-Class Middle Spin Squeeze — 75.9% Match Consistency | CSK/NZ |
+| **5** | **Yuzvendra Chahal** | **54.2** | 495 | **50** | **8.73** | 8.41 | **-0.32** | **35.4%** | MIDDLE | King of High-Pressure Wickets — 50 HP Wickets in 495 Deliveries | RR/SRH |
+| **6** | **Sikandar Raza** | **53.9** | 144 | **8** | **7.12** | 6.59 | **-0.53** | **37.8%** | MIDDLE | Dual-Role Finger Spin Lockdown — 84.6% Match Consistency (+0.82 xRP/ov) | PBKS/ZIM |
+| **7** | **Krunal Pandya** | **51.9** | 234 | **17** | **7.85** | 7.59 | **-0.26** | **37.2%** | MIDDLE | Middle-Overs Defensive Squeeze — +0.51 Runs Prevented per Over | LSG |
+| **8** | **Harpreet Brar** | **50.7** | 133 | **9** | **7.64** | 7.85 | **+0.21** | **37.6%** | MIDDLE | High-Trajectory Left-Arm Squeeze — +0.21 Economy Suppression | PBKS |
+| **9** | **Matheesha Pathirana** | **50.5** | 431 | **41** | **9.48** | 8.66 | **-0.82** | **35.8%** | DEATH | Slingy Yorker Death Executioner — 41 HP Wickets (94% Mid/Death) | CSK |
+| **10** | **Noor Ahmad** | **49.8** | 386 | **26** | **8.64** | 8.00 | **-0.64** | **36.5%** | MIDDLE | Young Left-Arm Wrist Spin Weapon — 26 HP Wickets (96% Mid/Death) | GT/CSK |
 
 ---
 
