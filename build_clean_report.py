@@ -67,7 +67,7 @@ html_content = f'''<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CLUTCH-X | Rajasthan Royals War Room Analytics</title>
+<title>Rajasthan Royals War Room Analytics | High-Pressure Performance Model</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {{
@@ -130,7 +130,7 @@ header {{
 
 h1 {{
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 900;
   letter-spacing: -0.02em;
   margin-bottom: 0.5rem;
@@ -138,9 +138,9 @@ h1 {{
 }}
 
 .subtitle {{
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   opacity: 0.95;
-  max-width: 750px;
+  max-width: 780px;
   font-weight: 400;
 }}
 
@@ -208,7 +208,7 @@ main {{
 
 h2 {{
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.45rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: var(--rr-navy);
   margin-bottom: 1.25rem;
@@ -238,6 +238,12 @@ h2 .num {{
   gap: 1.5rem;
 }}
 
+.grid-3 {{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}}
+
 .grid-4 {{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -247,6 +253,7 @@ h2 .num {{
 
 @media (max-width: 900px) {{
   .grid-2 {{ grid-template-columns: 1fr; }}
+  .grid-3 {{ grid-template-columns: 1fr; }}
   .grid-4 {{ grid-template-columns: 1fr 1fr; }}
 }}
 
@@ -411,6 +418,21 @@ tr:hover td {{
   margin-left: 0.35rem;
 }}
 
+.feasibility-box {{
+  background: #F1F5F9;
+  border-left: 4px solid var(--rr-navy);
+  padding: 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1rem 0;
+}}
+
+.feasibility-box h4 {{
+  color: var(--rr-navy);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}}
+
 @media print {{
   header {{ padding: 1.5rem 1rem; }}
   .header-actions {{ display: none; }}
@@ -427,7 +449,7 @@ tr:hover td {{
   <div class="header-container">
     <div>
       <span class="title-badge">Rajasthan Royals War Room Analytics</span>
-      <h1>CLUTCH-X: High-Pressure Reliability Engine</h1>
+      <h1>High-Pressure Performance & Auction Intelligence Model</h1>
       <p class="subtitle">IPL 2027 Auction Target Identification: Evaluating Pre-Delivery Leverage Across 200,999 Deliveries (2022–2026)</p>
     </div>
     <div class="header-actions">
@@ -460,15 +482,51 @@ tr:hover td {{
     </div>
     <div class="stat-box">
       <div class="stat-val" style="color:#16A34A;">20.0%</div>
-      <div class="stat-label">High-Pressure Balls</div>
+      <div class="stat-label">High-Pressure Deliveries</div>
+    </div>
+  </div>
+
+  <!-- FEASIBILITY & EXCLUSION FILTER CRITERIA -->
+  <div class="card">
+    <h2><span class="num">★</span> Auction Feasibility Framework: Exclusion of Star Retentions & Ineligible Profiles</h2>
+    <p>A fatal flaw in naive sports analytics is ranking players purely by raw prestige or overall stats without evaluating <strong>auction feasibility</strong>. To ensure actionable utility for Rajasthan Royals in the IPL 2027 Auction, our recruitment engine enforces four non-negotiable operational filters:</p>
+    
+    <div class="grid-2" style="margin-top: 1rem;">
+      <div class="feasibility-box">
+        <h4>1. Exclusion of Franchise Mega-Stars & Retained Faces</h4>
+        <p style="font-size: 0.88rem; color: #334155;">
+          Players such as <strong>Virat Kohli, Jasprit Bumrah, Rohit Sharma, Suryakumar Yadav, Heinrich Klaasen, Shubman Gill, Rishabh Pant, and Sanju Samson</strong> command locked multi-year franchise retention contracts at maximum purse brackets (₹18–25+ Cr) or Right-To-Match (RTM) guarantees. <strong>It is statistically and commercially impossible for these players to enter the open auction pool for Rajasthan Royals in 2027.</strong> Recommending them wastes analytical bandwidth and provides zero actionable recruitment strategy.
+        </p>
+      </div>
+
+      <div class="feasibility-box">
+        <h4>2. Exclusion of Legally Ineligible Nationals</h4>
+        <p style="font-size: 0.88rem; color: #334155;">
+          By BCCI regulatory policy and IPL governance protocols, Pakistani cricketers (e.g., Babar Azam, Mohammad Rizwan, Shaheen Afridi) are barred from registering for the IPL auction. All Pakistani players have been strictly removed from candidate pools to preserve legal compliance.
+        </p>
+      </div>
+
+      <div class="feasibility-box">
+        <h4>3. Exclusion of Top-Order Openers (Batting Positions 1–3)</h4>
+        <p style="font-size: 0.88rem; color: #334155;">
+          Rajasthan Royals have already solidified their long-term opening partnership in <strong>Yashasvi Jaiswal and Vaibhav Sooryavanshi</strong>. Allocating auction capital to top-order anchors would cause roster redundancy. Our batting evaluation strictly isolates <strong>Middle-Order Enforcers & Death Finishers (Positions 4, 5, 6, 7)</strong>.
+        </p>
+      </div>
+
+      <div class="feasibility-box">
+        <h4>4. Exclusion of Powerplay Opening Bowlers (&gt;25% PP Overs)</h4>
+        <p style="font-size: 0.88rem; color: #334155;">
+          RR's new-ball seam attack is already anchored by Jofra Archer, Sandeep Sharma, and Nandre Burger. The war room's urgent tactical requirement is <strong>Middle-Overs Spin Squeeze (Overs 7–15)</strong> and <strong>Death-Overs Yorker Lockdown (Overs 16–20)</strong>. Bowlers bowling over 25% of their deliveries in the powerplay were filtered out.
+        </p>
+      </div>
     </div>
   </div>
 
   <!-- SECTION 1: PRESSURE DEFINITION -->
   <div class="card">
     <h2><span class="num">1</span> What Counts as Pressure? The Pre-Delivery Mathematical Framework</h2>
-    <p>Cricket analytics often errs by defining pressure simply as "the death overs". In reality, a team needing 85 off 12 balls with 9 wickets down is in the 19th over, but the contest is virtually dead (zero leverage). Conversely, 30/3 in over 5 generates immense stress.</p>
-    <p style="margin-top: 0.5rem;"><strong>CLUTCH-X</strong> evaluates pressure strictly on the <strong>pre-delivery match state</strong> across all 200,999 balls (IPL and T20I, 2022–2026), preventing outcome leakage:</p>
+    <p>Cricket analytics often errs by defining pressure simply as "the death overs". In reality, a team needing 85 off 12 balls with 9 wickets down is in the 19th over, but the contest is dead (zero leverage). Conversely, 30/3 in over 5 generates immense stress.</p>
+    <p style="margin-top: 0.5rem;">Our analytical framework evaluates pressure strictly on the <strong>pre-delivery match state</strong> across all 200,999 balls (IPL and T20I, 2022–2026), preventing outcome leakage:</p>
     
     <div class="grid-2" style="margin-top: 1rem;">
       <div style="background: #F8FAFC; padding: 1.25rem; border-radius: 8px; border: 1px solid #E2E8F0;">
@@ -491,6 +549,29 @@ tr:hover td {{
       </div>
     </div>
 
+    <!-- EMPIRICAL DATA BREAKDOWN -->
+    <div style="margin-top: 1.5rem; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 8px; padding: 1.25rem;">
+      <h4 style="color: var(--rr-navy); margin-bottom: 0.5rem; font-family:'Montserrat',sans-serif;">Empirical Baseline Scoring Rates Across 200,999 Deliveries</h4>
+      <p style="font-size: 0.88rem; color: #475569; margin-bottom: 0.75rem;">To avoid phase bias, every delivery is evaluated against the empirical expectation of its discrete match state (Phase × Wickets Lost):</p>
+      <div class="grid-3">
+        <div style="background: #F8FAFC; padding: 0.85rem; border-radius: 6px; text-align: center; border: 1px solid #E2E8F0;">
+          <div style="font-weight: 700; color: var(--rr-blue);">Powerplay (Overs 1–6)</div>
+          <div style="font-size: 1.15rem; font-weight: 800; color: #1E293B; margin-top: 0.2rem;">8.02 RPO</div>
+          <div style="font-size: 0.75rem; color: #64748B;">Expected Wickets: 0.048/ball</div>
+        </div>
+        <div style="background: #F8FAFC; padding: 0.85rem; border-radius: 6px; text-align: center; border: 1px solid #E2E8F0;">
+          <div style="font-weight: 700; color: var(--rr-navy);">Middle Overs (Overs 7–15)</div>
+          <div style="font-size: 1.15rem; font-weight: 800; color: #1E293B; margin-top: 0.2rem;">7.74 RPO</div>
+          <div style="font-size: 0.75rem; color: #64748B;">Expected Wickets: 0.051/ball</div>
+        </div>
+        <div style="background: #F8FAFC; padding: 0.85rem; border-radius: 6px; text-align: center; border: 1px solid #E2E8F0;">
+          <div style="font-weight: 700; color: var(--rr-pink);">Death Overs (Overs 16–20)</div>
+          <div style="font-size: 1.15rem; font-weight: 800; color: #1E293B; margin-top: 0.2rem;">10.48 RPO</div>
+          <div style="font-size: 0.75rem; color: #64748B;">Overs 19–20: 11.49 RPO (0.089 wkts/ball)</div>
+        </div>
+      </div>
+    </div>
+
     <div class="figure-box">
       <img src="data:image/png;base64,{fig1_b64}" alt="Figure 1: Pressure Score Distribution">
       <div class="figure-caption">Figure 1: Distribution of continuous Pressure Scores across 200,999 balls, establishing the P80 Cutoff (42.26) separating high pressure from routine play.</div>
@@ -501,7 +582,7 @@ tr:hover td {{
   <div class="card">
     <h2><span class="num">2</span> Top 10 Batters Under Pressure: Clutch Batting Index (CBI)</h2>
     <p>The Clutch Batting Index (CBI) synthesizes: <strong>30% High-Pressure Strike Rate</strong>, <strong>25% Runs Above Expected (xRA)</strong>, <strong>20% Delta vs Baseline Strike Rate</strong>, <strong>15% Boundary Production Rate</strong>, and <strong>10% Match Consistency Rate (CCR)</strong> with Empirical Bayes shrinkage (prior confidence: 50 balls).</p>
-    <p style="font-size: 0.85rem; color: #4A5568; margin-top: 0.25rem;"><em>Franchise Tactical Filter: Excludes top-order openers and retained captains to isolate Rajasthan Royals' specific war room need for dedicated middle-order power hitters and death finishers (Batting Positions 4–7).</em></p>
+    <p style="font-size: 0.85rem; color: #4A5568; margin-top: 0.25rem;"><em>Applied Filter: Strictly pure middle-order enforcers and death finishers (Batting Positions 4–7). Openers and retained captains excluded.</em></p>
 
     <div style="overflow-x:auto;">
     <table>
@@ -535,7 +616,7 @@ tr:hover td {{
   <div class="card">
     <h2><span class="num">3</span> Top 10 Bowlers Under Pressure: Pressure Bowling Index (PBI)</h2>
     <p>The Pressure Bowling Index (PBI) synthesizes: <strong>30% Runs Prevented vs State (xRP)</strong>, <strong>25% Economy Suppression</strong>, <strong>20% Wicket Production</strong>, <strong>15% Delta Economy</strong>, and <strong>10% Spell Consistency</strong> with Empirical Bayes shrinkage.</p>
-    <p style="font-size: 0.85rem; color: #4A5568; margin-top: 0.25rem;"><em>Franchise Tactical Filter: Excludes new-ball powerplay opening bowlers (&lt;25% PP overs) to focus strictly on middle-overs squeeze bowlers (overs 7–15) and death-overs yorker executioners (overs 16–20).</em></p>
+    <p style="font-size: 0.85rem; color: #4A5568; margin-top: 0.25rem;"><em>Applied Filter: Strictly middle-overs squeeze and death specialists (&lt;25% Powerplay deliveries). New-ball openers excluded.</em></p>
 
     <div style="overflow-x:auto;">
     <table>
@@ -567,7 +648,7 @@ tr:hover td {{
 
   <!-- SECTION 4: RR AUCTION STRATEGY -->
   <div class="card">
-    <h2><span class="num">4</span> Rajasthan Royals IPL 2027 Auction Strategy & Squad Fit</h2>
+    <h2><span class="num">4</span> Rajasthan Royals IPL 2027 Auction Strategy & Tactical Squad Fit</h2>
     <p>Translating analytical reliability into franchise auction strategy for the Sawai Mansingh Stadium (Jaipur):</p>
 
     <div class="callout">
@@ -607,8 +688,8 @@ tr:hover td {{
 </main>
 
 <footer style="text-align: center; padding: 2rem; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid #E2E8F0; background: white;">
-  <p><strong>Rajasthan Royals SupeRR Selector Season 2 — Round 1 War Room Report</strong></p>
-  <p style="margin-top: 0.35rem;">Proprietary Ball-by-Ball Analysis (2022–2026) • CLUTCH-X Analytical Framework</p>
+  <p><strong>Rajasthan Royals War Room Player Evaluation</strong></p>
+  <p style="margin-top: 0.35rem;">Proprietary Delivery-Level Analysis (2022–2026) • Advanced Expected Value & Leverage Modeling</p>
   <p style="margin-top: 0.35rem;"><a href="https://github.com/Shubhdix9/RR" style="color:var(--rr-blue);">GitHub Repository</a> • <a href="https://shubhdix9.github.io/RR/" style="color:var(--rr-pink);">Live Interactive Dashboard</a></p>
 </footer>
 
@@ -622,4 +703,4 @@ with open('RR_WAR_ROOM_REPORT.html', 'w', encoding='utf-8') as f:
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html_content)
 
-print("Successfully generated clean RR_WAR_ROOM_REPORT.html and index.html!")
+print("Successfully regenerated RR_WAR_ROOM_REPORT.html and index.html!")
