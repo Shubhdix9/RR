@@ -3,7 +3,7 @@
     {
       "rank": 1,
       "name": "Ashutosh Sharma",
-      "cbi": 85.7,
+      "cbi": 88.2,
       "balls": 233,
       "sr_raw": 183.7,
       "base_sr": 137.6,
@@ -19,7 +19,7 @@
     {
       "rank": 2,
       "name": "Sameer Rizvi",
-      "cbi": 86.7,
+      "cbi": 86.4,
       "balls": 85,
       "sr_raw": 184.7,
       "base_sr": 146.1,
@@ -35,7 +35,7 @@
     {
       "rank": 3,
       "name": "Shubham Dubey",
-      "cbi": 85.2,
+      "cbi": 85.1,
       "balls": 90,
       "sr_raw": 180.0,
       "base_sr": 133.1,
@@ -51,7 +51,7 @@
     {
       "rank": 4,
       "name": "Donovan Ferreira",
-      "cbi": 85.0,
+      "cbi": 84.5,
       "balls": 111,
       "sr_raw": 188.3,
       "base_sr": 163.9,
@@ -67,7 +67,7 @@
     {
       "rank": 5,
       "name": "Sikandar Raza",
-      "cbi": 84.2,
+      "cbi": 83.8,
       "balls": 223,
       "sr_raw": 178.9,
       "base_sr": 131.2,
@@ -83,7 +83,7 @@
     {
       "rank": 6,
       "name": "Liam Livingstone",
-      "cbi": 82.1,
+      "cbi": 82.9,
       "balls": 237,
       "sr_raw": 176.4,
       "base_sr": 152.8,
@@ -197,7 +197,7 @@
     {
       "rank": 3,
       "name": "Washington Sundar",
-      "pbi": 55.4,
+      "pbi": 55.2,
       "balls": 181,
       "wkts": 11,
       "econ_raw": 7.62,
